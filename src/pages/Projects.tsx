@@ -7,6 +7,7 @@ const projects = [
     description: "Personal portfolio showcasing my poetry and coding projects.",
     tech: ["React", "TypeScript", "TailwindCSS"],
     image: "/images/portfolio-app.jpg",
+    link: "#",
    
   },
   {
@@ -14,6 +15,7 @@ const projects = [
     description: "A web app to read, filter, and explore my poetry collections.",
     tech: ["React", "Framer Motion", "Firebase"],
     image: "/images/poetry-app.jpg",
+    link: "#",
     
   },
 ];
