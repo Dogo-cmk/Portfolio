@@ -16,12 +16,6 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!name || !email) return;
-    alert("Form submitted!");
-  };
-
   return (
     <section className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-12 px-4 sm:px-6">
       <div className="max-w-3xl mx-auto">
@@ -30,30 +24,44 @@ export default function Contact() {
         </h1>
 
         <form
-          onSubmit={handleSubmit}
+          action="https://formsubmit.co/dogobomiadelayi@gmail.com"
+          method="POST"
           className="bg-white shadow-lg rounded-xl p-6 flex flex-col gap-4 relative"
         >
+          {/* Hidden control inputs */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://portfolioworkspace.vercel.app/thank-you"
+          />
+
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
             className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
             className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
           />
           <textarea
+            name="message"
             placeholder="Your Message"
             rows={5}
+            required
             className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
           ></textarea>
 
-          {/* Escaping Motion Button (within flex container) */}
           <div className="relative h-12">
             <motion.button
               type="submit"
@@ -70,4 +78,3 @@ export default function Contact() {
     </section>
   );
 }
-
