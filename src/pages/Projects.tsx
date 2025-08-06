@@ -1,20 +1,28 @@
 // Projects.tsx
 import { motion } from "framer-motion";
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tech: string[];
+  image: string;
+  link: string;
+};
+
+const projects: Project[] = [
   {
     title: "Portfolio Website",
     description: "Personal portfolio showcasing my poetry and coding projects.",
     tech: ["React", "TypeScript", "TailwindCSS"],
     image: "/images/portfolio-app.jpg",
-   
+    link: "#",
   },
   {
     title: "Poetry App",
     description: "A web app to read, filter, and explore my poetry collections.",
     tech: ["React", "Framer Motion", "Firebase"],
     image: "/images/poetry-app.jpg",
-    
+    link: "#",
   },
 ];
 
@@ -69,3 +77,4 @@ export default function Projects() {
     </section>
   );
 }
+
