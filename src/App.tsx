@@ -8,7 +8,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Poetry from './pages/Poetry';
 import Contact from './pages/Contact';
-import ThankYou from "./pages/thank you";
 
 
 function App() {
@@ -75,7 +74,6 @@ function App() {
         <Route path="/poetry" element={<Poetry />} />
         <Route path="/poetry/:id" element={<PoemDetail />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </motion.div>
   );
