@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { PencilSquareIcon, CodeBracketIcon, LightBulbIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const timelineData = [
   {
@@ -225,46 +226,48 @@ export default function About() {
           ))}
         </div>
         {/* CTA Section */}
-        <section className="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-16 mt-20">
-          <div className="max-w-3xl mx-auto text-center px-6">
-            <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              Let’s Build Something Meaningful Together
-            </motion.h2>
-            <motion.p
-              className="text-lg text-indigo-100 mb-8"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              Whether it’s a story told through code or a poem written in ink, I’d love to create with you.
-            </motion.p>
+          <section className="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-16 mt-20">
+            <div className="max-w-3xl mx-auto text-center px-6">
+              <motion.h2
+                className="text-3xl md:text-4xl font-bold mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                Let’s Build Something Meaningful Together
+              </motion.h2>
+              <motion.p
+                className="text-lg text-indigo-100 mb-8"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                Whether it’s a story told through code or a poem written in ink, I’d love to create with you.
+              </motion.p>
 
-            <div className="flex justify-center gap-4">
-              <motion.a
-                href="/contact"
-                className="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-100 transition"
-                whileHover={{ scale: 1.05 }}
-              >
-                Contact Me
-              </motion.a>
-              <motion.a
-                href="/poetry"
-                className="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition"
-                whileHover={{ scale: 1.05 }}
-              >
-                Read My Poetry
-              </motion.a>
+              <div className="flex justify-center gap-4">
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <Link
+                    to="/contact"
+                    className="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-100 transition"
+                  >
+                    Contact Me
+                  </Link>
+                </motion.div>
+
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <Link
+                    to="/poetry"
+                    className="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition"
+                  >
+                    Read My Poetry
+                  </Link>
+                </motion.div>
+              </div>
             </div>
-          </div>
-        </section>
-
+          </section>
       </div>
     </section>
   );
