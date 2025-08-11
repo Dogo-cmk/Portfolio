@@ -6,6 +6,7 @@ import PoemDetail from './pages/PoemDetail';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import ComingSoon from './pages/ComingSoon';
 import Poetry from './pages/Poetry';
 import Contact from './pages/Contact';
 
@@ -74,6 +75,7 @@ function App() {
         <Route path="/poetry" element={<Poetry />} />
         <Route path="/poetry/:id" element={<PoemDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </Routes>
     </motion.div>
   );
