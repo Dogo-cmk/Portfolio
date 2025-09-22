@@ -10,7 +10,7 @@ const timelineData = [
     image: "/images/poetry.jpg",
   },
   {
-    year: "2023 - Present",
+    year: "2022 - Present",
     title: "Learning to Code",
     description: "Started diving into web development with React, TypeScript, and Tailwind. Still learning because growth never stops.",
     image: "/images/code.jpg",
@@ -26,6 +26,12 @@ const timelineData = [
     title: "Started Building My Portfolio",
     description: "Merging my art and code to create a digital home for my poems and projects.",
     image: "/images/portfolio.jpg",
+  },
+  {
+    year: "June 2025 - Present",
+    title: "Internship",
+    description: "Improving my skills whiLe working at BrandDrive in solving real world problems.",
+    image: "/image/onboardingimage.svg"
   },
 ];
 
