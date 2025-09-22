@@ -27,6 +27,12 @@ const timelineData = [
     description: "Merging my art and code to create a digital home for my poems and projects.",
     image: "/images/portfolio.jpg",
   },
+  {
+    year: "June 2025 - Present",
+    title: "Internship",
+    description: "Improving my skills whiLe working at BrandDrive in solving real world problems.",
+    image: "/image/onboardingimage.svg"
+  },
 ];
 
 export default function About() {
