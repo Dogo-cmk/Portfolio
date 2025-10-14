@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-4xl md:text-6xl font-bold text-indigo-700 mb-4">
-        Oluwadogobomi Adelayi
+        Ginikaa Michelle
       </h1>
       <p className="text-xl md:text-2xl text-gray-700 mb-6">
         Developer · Poet · Deep Thinker
